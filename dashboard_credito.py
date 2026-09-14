@@ -79,7 +79,8 @@ def load_data():
     else:
         st.error("No se encontró el archivo de datos.")
         return pd.DataFrame()
-    df = raw[list(COLUMNAS.keys())].rename(columns=COLUMNAS).copy()
+    cols_existentes = {k: v for k, v in COLUMNAS.items() if k in raw.columns}
+    df = raw[list(cols_existentes.keys())].rename(columns=cols_existentes).copy()
     df["EDAD"] = (-df["EDAD_DIAS"] / 365).round(1)
     df["ANTIGUEDAD_DESCONOCIDA"] = (df["ANTIGUEDAD_LABORAL_DIAS"] == 365243).astype(int)
     df["ANTIGUEDAD_LABORAL_DIAS"] = df["ANTIGUEDAD_LABORAL_DIAS"].replace(365243, np.nan)

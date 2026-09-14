@@ -1,7 +1,7 @@
 # 🏦 Análisis de Riesgo para Solicitudes de Crédito
 ### Prototipo Funcional de Machine Learning & Dashboard Interactivo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://seminario-de-innovacion-mexavm-equipo-3a-6t8grp4s2drhwk8yuwndi.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
